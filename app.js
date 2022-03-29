@@ -3,7 +3,7 @@ const app = express()
 const postsData = require('./mock/posts.json')
 
 app.get('/', (req, res) => {
-  res.send("Hello")
+  res.send(process.env)
 })
 
 app.get('/posts', (req, res) => {
